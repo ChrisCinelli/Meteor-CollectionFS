@@ -1,4 +1,4 @@
-cfs:dropbox
+chriscinelli:dropbox
 =========================
 
 NOTE: This package is under active development right now (2015-05-08). It has
@@ -11,7 +11,7 @@ A Meteor package that adds Dropbox storage for
 ## Installation
 
 ```
-$ meteor add cfs:dropbox
+$ meteor add chriscinelli:dropbox
 ```
 
 ## Dropbox Setup

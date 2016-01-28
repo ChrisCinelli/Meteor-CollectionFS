@@ -72,28 +72,28 @@ If you have Documentation feedback/requests please post on [issue 206](https://g
 $ cd <app dir>
 ``` 
 
-You must add `cfs:standard-packages`, which is the main package:
+You must add `chriscinelli:standard-packages`, which is the main package:
 
 ```bash
-$ meteor add cfs:standard-packages
+$ meteor add chriscinelli:standard-packages
 ``` 
 
-You must add at least one storage adapter package. See the Storage Adapters section for a list of the available storage adapter packages. At least `cfs:gridfs` or `cfs:filesystem` must be added, too, even if you are not using them. The temporary store requires one of them.
+You must add at least one storage adapter package. See the Storage Adapters section for a list of the available storage adapter packages. At least `chriscinelli:gridfs` or `chriscinelli:filesystem` must be added, too, even if you are not using them. The temporary store requires one of them.
 
 ```bash
-$ meteor add cfs:gridfs
+$ meteor add chriscinelli:gridfs
 
 # OR
 
-$ meteor add cfs:filesystem
+$ meteor add chriscinelli:filesystem
 
 # OR
 
-$ meteor add cfs:s3
+$ meteor add chriscinelli:s3
 
 # OR
 
-$ meteor add cfs:dropbox
+$ meteor add chriscinelli:dropbox
 ``` 
 
 Depending on what you need to do, you may need to add additional add-on packages. These are explained in the documentation sections to which they apply.
@@ -255,10 +255,10 @@ Storage adapters handle retrieving the file data and removing the file data
 when you delete the file. There are currently four available storage adapters, which are in separate
 packages. Refer to the package documentation for usage instructions.
 
-* [cfs:gridfs](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/gridfs): Allows you to save data to mongodb GridFS.
-* [cfs:filesystem](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/filesystem): Allows you to save to the server filesystem.
-* [cfs:s3](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/s3): Allows you to save to an Amazon S3 bucket.
-* [cfs:dropbox](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/dropbox): Allows you to save to a Dropbox account.
+* [chriscinelli:gridfs](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/gridfs): Allows you to save data to mongodb GridFS.
+* [chriscinelli:filesystem](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/filesystem): Allows you to save to the server filesystem.
+* [chriscinelli:s3](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/s3): Allows you to save to an Amazon S3 bucket.
+* [chriscinelli:dropbox](https://github.com/CollectionFS/Meteor-CollectionFS/tree/devel/packages/dropbox): Allows you to save to a Dropbox account.
  
 ### Securing sensetive information
 _If you're using a storage adapter that requires sensitive information such as
@@ -331,7 +331,7 @@ A common use for `transformWrite` is to manipulate images before saving them.
 To get this set up:
 
 1. Install [GraphicsMagick](http://www.graphicsmagick.org/) or [ImageMagick](http://www.imagemagick.org/script/index.php) on your development machine and on any server that will host your app. (The free Meteor deployment servers do not have either of these, so you can't deploy to there.) These are normal operating system applications, so you have to install them using the correct method for your OS. For example, on Mac OSX you can use `brew install graphicsmagick` assuming you have Homebrew installed.
-2. Add the `cfs:graphicsmagick` Meteor package to your app: `meteor add cfs:graphicsmagick`
+2. Add the `chriscinelli:graphicsmagick` Meteor package to your app: `meteor add chriscinelli:graphicsmagick`
 
 ### Basic Example
 
@@ -514,7 +514,7 @@ _At the moment storing FS.File - References in MongoDB on the server side doesn'
 _Instead store the _id's of your file objects and then fetch the FS.File-Objects from your CollectionFS - Collection._
 
 Often your files are part of another entity. You can store a reference to the file directly in the entity.
-You need to add `cfs:ejson-file` to your packages with `meteor add cfs:ejson-file`.
+You need to add `chriscinelli:ejson-file` to your packages with `meteor add chriscinelli:ejson-file`.
 Then you can do for example:
 
 ```js
@@ -679,7 +679,7 @@ specify the store name, the URL will be for the copy in the first defined store.
 {{/each}}
 ```
 
-This is actually using the [url method](https://github.com/CollectionFS/Meteor-cfs-access-point/blob/master/api.md#fsfileurloptionsanywhere), which is added to the `FS.File` prototype by the `cfs:access-point` package. You can use any of the options mentioned in the API documentation, and you can call it from client and server code.
+This is actually using the [url method](https://github.com/CollectionFS/Meteor-cfs-access-point/blob/master/api.md#fsfileurloptionsanywhere), which is added to the `FS.File` prototype by the `chriscinelli:access-point` package. You can use any of the options mentioned in the API documentation, and you can call it from client and server code.
 
 ### isImage
 

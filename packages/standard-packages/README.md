@@ -1,16 +1,16 @@
-cfs:standard-packages
+chriscinelli:standard-packages
 =========================
 
 This packege serves as a wrapper for several other packages and has no functionality in itself:
 
-* cfs:standard-packages (implies some component packages)
-  * cfs:base-package
-  * cfs:file
-  * cfs:collection
-  * cfs:collection-filters
-  * cfs:access-point
-  * cfs:worker
-  * cfs:upload-http
+* chriscinelli:standard-packages (implies some component packages)
+  * chriscinelli:base-package
+  * chriscinelli:file
+  * chriscinelli:collection
+  * chriscinelli:collection-filters
+  * chriscinelli:access-point
+  * chriscinelli:worker
+  * chriscinelli:upload-http
 
 Refer to the [CollectionFS](https://github.com/CollectionFS/Meteor-CollectionFS)
 documentation for more information.

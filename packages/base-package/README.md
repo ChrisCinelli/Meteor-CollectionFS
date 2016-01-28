@@ -1,11 +1,11 @@
-cfs:base-package
+chriscinelli:base-package
 =========================
 
 This is a Meteor package used by
 [CollectionFS](https://github.com/CollectionFS/Meteor-CollectionFS).
 
 You don't need to manually add this package to your app. It is added when you
-add the `cfs:standard-packages` package.
+add the `chriscinelli:standard-packages` package.
 
 This package provides the `FS` namespace and helper methods used by many
 CollectionFS packages.

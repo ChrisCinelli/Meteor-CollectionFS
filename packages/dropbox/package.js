@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'cfs:dropbox',
+  name: 'chriscinelli:dropbox',
   version: '0.0.3',
   summary: 'Dropbox storage adapter for CollectionFS',
   git: 'https://github.com/CollectionFS/Meteor-CollectionFS/tree/master/packages/dropbox',
@@ -14,7 +14,7 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use(['cfs:base-package@0.0.30', 'cfs:storage-adapter@0.2.1']);
+  api.use(['chriscinelli:base-package@0.0.30', 'chriscinelli:storage-adapter@0.2.1']);
   api.addFiles([
     'dropbox.server.js',
     'dropbox.upload.stream.js',
@@ -23,7 +23,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use(['cfs:standard-packages', 'cfs:dropbox', 'test-helpers', 'tinytest'], 'server');
+  api.use(['chriscinelli:standard-packages', 'chriscinelli:dropbox', 'test-helpers', 'tinytest'], 'server');
   api.addFiles('tests/server-tests.js', 'server');
   api.addFiles('tests/client-tests.js', 'client');
 });

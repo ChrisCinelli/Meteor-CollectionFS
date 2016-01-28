@@ -1,4 +1,4 @@
-cfs:storage-adapter
+chriscinelli:storage-adapter
 =========================
 
 This is a Meteor package used by

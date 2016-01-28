@@ -12,20 +12,20 @@ or wants to make their own storage adapter.
 
 ## All Packages
 
-* cfs:standard-packages (implies some component packages)
-  * cfs:base-package
-  * cfs:file
-  * cfs:collection
-  * cfs:collection-filters
-  * cfs:access-point
-  * cfs:worker
-  * cfs:upload-http
-* cfs:graphicsmagick
-* cfs:ui
-* cfs:filesystem
-* cfs:gridfs
-* cfs:s3
-* cfs:dropbox
+* chriscinelli:standard-packages (implies some component packages)
+  * chriscinelli:base-package
+  * chriscinelli:file
+  * chriscinelli:collection
+  * chriscinelli:collection-filters
+  * chriscinelli:access-point
+  * chriscinelli:worker
+  * chriscinelli:upload-http
+* chriscinelli:graphicsmagick
+* chriscinelli:ui
+* chriscinelli:filesystem
+* chriscinelli:gridfs
+* chriscinelli:s3
+* chriscinelli:dropbox
 
 ## Collections
 

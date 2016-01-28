@@ -1,4 +1,4 @@
-## cfs:upload-http Public API ##
+## chriscinelli:upload-http Public API ##
 
 CollectionFS, HTTP File Upload
 

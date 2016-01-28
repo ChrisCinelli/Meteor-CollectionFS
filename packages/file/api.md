@@ -1,4 +1,4 @@
-## cfs:file Public API ##
+## chriscinelli:file Public API ##
 
 CollectionFS, FS.File object
 
